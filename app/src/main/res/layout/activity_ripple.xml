@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rippleBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:rb_color="@color/appColor"
+    app:rb_radius="32dp"
+    app:rb_rippleAmount="4"
+    app:rb_duration="3000"
+    app:rb_scale="6"
+    tools:context=".activities.RippleActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/welcome_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        app:civ_border_width="1dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="@color/appColor" />
+
+    <TextView
+        android:id="@+id/welcome_image_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Big Welcome, Victor"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/appColor"
+        android:fontFamily="@font/junge"
+        android:layout_toStartOf="@+id/welcome_image" />
+
+    <ImageView
+        android:id="@+id/rippleImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/index_finger_icon" />
+
+    <TextView
+        android:id="@+id/click_icon_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rippleImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Click on the icon to select your department and sit back."
+        android:gravity="center"
+        android:textColor="@color/appColor"
+        android:fontFamily="@font/junge"
+        android:textStyle="bold" />
+
+</com.skyfishjy.library.RippleBackground>

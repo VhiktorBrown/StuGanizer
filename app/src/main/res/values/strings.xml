@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">StuGanizer</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <string name="ask_gpa">What\'s the maximum GPA in your school? Is it 4.0 or 5.0? Select it below.</string>
+    <string name="ask_for_courses">Now, you can type in the amount of courses you wish to calculate for. Ex: 6, 7, 8 or 9, etc.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

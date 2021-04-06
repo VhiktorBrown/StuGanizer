@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/timeline_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/appColor"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <TextView
+        android:id="@+id/timeline_textView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/appColor" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextColor="@color/appColor"
+        app:tabTextAppearance="@style/BodyTextStyle"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="@color/appColor"
+        app:tabGravity="fill">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/first_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ist semester" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/second_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2nd semester" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/total_gp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total GP" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/timeline_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="5dp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:labelVisibilityMode="labeled"
+        android:background="@drawable/bottom_nav_corner"
+        app:itemIconTint="@color/bottom_nav_text"
+        app:itemTextColor="@color/bottom_nav_text"/>
+
+</LinearLayout>

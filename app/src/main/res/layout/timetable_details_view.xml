@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    android:layout_marginBottom="1dp"
+    android:id="@+id/card_view2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="6dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/start_time_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/view2"
+            android:text="9:00"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:id="@+id/end_time_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/view2"
+            android:text="11:00"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:id="@+id/course_name_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/start_time_1"
+            android:text="Computer Science"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginStart="15dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/venue_name_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/end_time_1"
+            android:text="Science Village"
+            android:textSize="14sp"
+            android:layout_marginStart="15dp"
+            android:drawableStart="@drawable/ic_location"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:id="@+id/lecturer_name_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dr. John Ezekwesili"
+            android:textSize="10sp"
+            android:drawableStart="@drawable/ic_person"
+            android:textStyle="bold"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/grayCloud"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="4dp"
+            android:layout_alignParentBottom="true"/>
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/year_1"
+        android:title="Year 1"
+        android:icon="@drawable/ic_school" />
+
+    <item
+        android:id="@+id/year_2"
+        android:title="Year 2"
+        android:icon="@drawable/ic_school" />
+
+    <item
+        android:id="@+id/year_3"
+        android:title="Year 3"
+        android:icon="@drawable/ic_school" />
+
+    <item
+        android:id="@+id/year_4"
+        android:title="Year 4"
+        android:icon="@drawable/ic_school" />
+
+    <item
+        android:id="@+id/year_5"
+        android:title="Year 5"
+        android:icon="@drawable/ic_school" />
+</menu>

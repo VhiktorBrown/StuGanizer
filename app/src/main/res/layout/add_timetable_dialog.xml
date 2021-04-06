@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appColor">
+
+        <EditText
+            android:id="@+id/lecturer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Lecturer's Name"
+            android:fontFamily="@font/junge"
+            android:layout_marginTop="5dp"
+            android:textColorHint="@color/colorWhite"
+            android:textColor="@color/colorWhite"/>
+
+        <EditText
+            android:id="@+id/course_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/lecturer_name"
+            android:layout_marginTop="5dp"
+            android:hint="Course title"
+            android:fontFamily="@font/junge"
+            android:textColorHint="@color/colorWhite"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:id="@+id/start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/course_name"
+            android:layout_marginTop="5dp"
+            android:text="Start time"
+            android:fontFamily="@font/junge"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="70dp" />
+
+        <TextView
+            android:id="@+id/end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/course_name"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorWhite"
+            android:text="End time"
+            android:fontFamily="@font/junge"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_marginEnd="70dp" />
+
+        <EditText
+            android:id="@+id/venue_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/start_time"
+            android:hint="Lecture venue"
+            android:fontFamily="@font/junge"
+            android:gravity="center"
+            android:textColorHint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <Button
+            android:id="@+id/done_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/venue_name"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Done"
+            android:fontFamily="@font/junge"
+            android:textStyle="bold"
+            android:textColor="@color/appColor"
+            android:background="@drawable/rounded_button_timetable" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/venue_name"
+            android:layout_toStartOf="@+id/done_button"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Cancel"
+            android:fontFamily="@font/junge"
+            android:textStyle="bold"
+            android:textColor="@color/appColor"
+            android:background="@drawable/rounded_button_timetable" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.NoteDetails">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/note_details_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="@color/appColor" />
+
+    <TextView
+        android:id="@+id/note_details_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Details"
+        android:textSize="18sp"
+        android:layout_below="@+id/note_details_toolbar"
+        android:fadeScrollbars="true"
+        android:scrollbars="vertical"
+        android:layout_margin="16dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/note_details_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_delete" />
+
+</RelativeLayout>

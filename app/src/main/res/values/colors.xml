@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4171C1</color>
+    <color name="colorPrimaryDark">#4171C1</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="appColor">#4171C1</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorTransparentWhite">#cccccc</color>
+
+
+
+    <color name="cookieBrown">#C7A317</color>
+    <color name="sand">#C2B280</color>
+    <color name="orangeGold">#D4A017</color>
+    <color name="redFox">#C35817</color>
+    <color name="constructionConeOrange">#F87431</color>
+    <color name="sunriseOrange">#E67451</color>
+    <color name="scarlet">#FF2400</color>
+    <color name="red">#FF0000</color>
+    <color name="loveRed">#E41B17</color>
+    <color name="cherryRed">#C24641</color>
+    <color name="fireBrick">#800517</color>
+    <color name="maroon">#810541</color>
+    <color name="cadillacPink">#E38AAE</color>
+    <color name="violetRed">#F6358A</color>
+    <color name="vampireGray">#565051</color>
+    <color name="grayCloud">#B6B6B4</color>
+    <color name="mistBlue">#646D7E</color>
+    <color name="steelBlue">#4863A0</color>
+    <color name="denimBlue">#151B8D</color>
+    <color name="blueEyes">#1569C7</color>
+    <color name="blueLotus">#6960EC</color>
+    <color name="tronBlue">#7DFDFE</color>
+    <color name="blueHosta">#77BFC7</color>
+    <color name="blueGreen">#7BCCB5</color>
+    <color name="venomGreen">#728C00</color>
+    <color name="pineGreen">#387C44</color>
+    <color name="mediumSpringGreen">#348017</color>
+    <color name="frogGreen">#99C68E</color>
+    <color name="sunYellow">#FFE87C</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="lemonChiffon">#FFF8C6</color>
+    <color name="cantaloupe">#FFA62F</color>
+    <color name="rust">#C36241</color>
+
+
+</resources>

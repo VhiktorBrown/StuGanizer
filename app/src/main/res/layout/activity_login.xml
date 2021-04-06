@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/logIn_layout"
+    tools:context=".activities.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/profile"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/appColor"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:text="Welcome back"
+            android:fontFamily="@font/junge"
+            android:textColor="@color/appColor"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/appColor"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_marginTop="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Username"
+            android:drawableStart="@drawable/ic_person"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawableTint="@color/appColor"
+            android:drawablePadding="10dp"
+            android:inputType="textPersonName"
+            android:textColor="@color/appColor"
+            android:background="@drawable/edit_background"
+            android:padding="20dp" >
+        </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/appColor"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/appColor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Password"
+                android:drawableStart="@drawable/ic_password"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawableTint="@color/appColor"
+                android:drawablePadding="10dp"
+                android:textColor="@color/appColor"
+                android:inputType="textPassword"
+                android:background="@drawable/edit_background"
+                android:padding="20dp" >
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Forgot Password?"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_marginRight="35dp"
+            android:textColor="@color/appColor"
+            android:fontFamily="@font/junge"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Log in"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/junge"
+            android:layout_marginTop="20dp"
+            android:layout_margin="10dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/rounded_button_coloured" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/appColor"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

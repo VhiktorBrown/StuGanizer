@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/appColor"
+        app:titleTextColor="@color/colorWhite"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/AppTheme">
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/blank_textView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/appColor"
+        android:text="My Department: Computer Science"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/biryani"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:paddingTop="20dp"
+        android:layout_below="@+id/toolbar" />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blank_textView"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/appColor"
+        app:tabBackground="@color/colorWhite"
+        app:tabIndicatorHeight="3dp"
+        app:tabMode="fixed"
+        app:tabTextColor="@color/appColor">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/first_semester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Semester" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/second_semester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second Semester" />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layout" />
+
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".activities.WalkThrough">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/boarding_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_above="@+id/next_btn"/>
+
+    <LinearLayout
+        android:id="@+id/dotsLayout"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/next_btn"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:background="@android:color/transparent"
+        android:textColor="@color/appColor"
+        android:textSize="16sp"
+        android:fontFamily="@font/junge"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:id="@+id/prev_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:visibility="invisible"
+        android:background="@android:color/transparent"
+        android:textColor="@color/appColor"
+        android:textSize="16sp"
+        android:fontFamily="@font/junge"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp" />
+
+
+    
+    
+</RelativeLayout>

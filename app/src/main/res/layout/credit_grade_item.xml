@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    android:layout_marginBottom="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/course_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course 1"
+        android:fontFamily="@font/junge"
+        android:layout_margin="3dp"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/creditLoad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit Load: "
+            android:fontFamily="@font/junge"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_alignParentBottom="true"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/creditLoad_editText"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_background"
+            android:padding="3dp"
+            android:layout_below="@+id/course_index"
+            android:hint="1 - 6"
+            android:gravity="center"
+            android:layout_toEndOf="@+id/creditLoad"
+            android:layout_alignParentBottom="true"
+            android:inputType="number"
+            android:textColor="@color/appColor" />
+
+        <TextView
+            android:id="@+id/grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grade: "
+            android:fontFamily="@font/junge"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/creditLoad_editText"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/grade_editText"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_background"
+            android:padding="3dp"
+            android:layout_below="@+id/course_index"
+            android:hint="A - F"
+            android:gravity="center"
+            android:layout_toEndOf="@+id/grade"
+            android:layout_alignParentBottom="true"
+            android:inputType="textCapWords"
+            android:textColor="@color/appColor" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

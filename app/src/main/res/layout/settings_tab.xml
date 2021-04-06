@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relative_image_text"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorWhite"
+        android:padding="5dp" >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/settings_image_view"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/profile"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/appColor"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:id="@+id/settings_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Victor Ebuka"
+            android:layout_toEndOf="@+id/settings_image_view"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/junge"
+            android:textSize="16sp"
+            android:textColor="@color/appColor"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/settings_school_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nnamdi Azikiwe University"
+            android:layout_toEndOf="@+id/settings_image_view"
+            android:layout_marginStart="15dp"
+            android:textSize="16sp"
+            android:textColor="@color/appColor"
+            android:fontFamily="@font/junge"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_below="@+id/settings_user_name"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_image_text"
+        android:background="@color/appColor"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="true"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/change_username_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_button_timetable"
+            android:text="Change username"
+            android:fontFamily="@font/junge"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:gravity="start|center"
+            android:padding="10dp"
+            android:drawableStart="@drawable/ic_person"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/appColor"
+            android:textColor="@color/appColor" />
+
+        <TextView
+            android:id="@+id/settings_picture_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile Photo"
+            android:fontFamily="@font/junge"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/change_username_btn"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/change_picture"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_button_timetable"
+            android:text="Change profile picture"
+            android:fontFamily="@font/junge"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:gravity="start|center"
+            android:padding="10dp"
+            android:drawableStart="@drawable/ic_add_a_photo"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:layout_below="@+id/settings_picture_text"
+            android:drawableTint="@color/appColor"
+            android:textColor="@color/appColor" />
+
+        <Button
+            android:id="@+id/remove_picture"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_button_timetable"
+            android:text="Remove picture"
+            android:fontFamily="@font/junge"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:gravity="start|center"
+            android:padding="10dp"
+            android:drawableStart="@drawable/ic_delete"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:layout_below="@+id/change_picture"
+            android:drawableTint="@color/appColor"
+            android:textColor="@color/appColor" />
+
+        <TextView
+            android:id="@+id/settings_password_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Security"
+            android:fontFamily="@font/junge"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/remove_picture"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/change_password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_button_timetable"
+            android:text="Change password"
+            android:fontFamily="@font/junge"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:gravity="start|center"
+            android:padding="10dp"
+            android:drawableStart="@drawable/ic_password"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:layout_below="@+id/settings_password_text"
+            android:drawableTint="@color/appColor"
+            android:textColor="@color/appColor" />
+
+        <Button
+            android:id="@+id/change_hint"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_button_timetable"
+            android:text="Reset password hint"
+            android:fontFamily="@font/junge"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:gravity="start|center"
+            android:padding="10dp"
+            android:drawableStart="@drawable/ic_hint"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:layout_below="@+id/change_password"
+            android:drawableTint="@color/appColor"
+            android:textColor="@color/appColor" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

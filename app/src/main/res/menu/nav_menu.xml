@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/my_courses"
+            android:title="My courses"
+            android:icon="@drawable/ic_my_courses" />
+
+        <item
+            android:id="@+id/help_a_friend"
+            android:title="Help a friend"
+            android:icon="@drawable/ic_help_a_friend" />
+
+        <item
+            android:id="@+id/my_notes"
+            android:title="My Notes"
+            android:icon="@drawable/ic_notes" />
+
+        <item
+            android:id="@+id/timeline"
+            android:title="Timeline"
+            android:icon="@drawable/ic_timeline" />
+
+        <item
+            android:id="@+id/school_timetable"
+            android:title="School Timetable"
+            android:icon="@drawable/ic_school_timetable" />
+
+    </group>
+    <item android:title="">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/settings"
+                    android:title="Settings"
+                    android:icon="@drawable/ic_settings" />
+
+                <item
+                    android:id="@+id/help_and_feedback"
+                    android:title="Help/Feedback"
+                    android:icon="@drawable/ic_help_and_feedback" />
+            </group>
+
+        </menu>
+
+    </item>
+
+</menu>

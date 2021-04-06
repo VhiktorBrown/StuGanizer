@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/appColor">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/nav_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/nav_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/nav_image"
+        android:text="Victor Ebuka"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/junge"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/nav_school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/nav_image"
+        android:text="Nnamdi Azikiwe University"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@+id/nav_name"
+        android:layout_marginTop="2dp"
+        android:gravity="start|center"
+        android:fontFamily="@font/junge"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:layout_marginStart="20dp" />
+
+
+
+</RelativeLayout>
